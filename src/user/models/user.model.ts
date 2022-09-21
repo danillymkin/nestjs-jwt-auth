@@ -9,15 +9,6 @@ export class UserModel implements User {
   @ApiProperty({ description: 'Электронная почта', example: 'alice@mail.ru' })
   public email: string;
 
-  @ApiProperty({ description: 'Имя', example: 'Алиса' })
-  public firstName: string;
-
-  @ApiProperty({ description: 'Фамилия', example: 'Ивлиева' })
-  public lastName: string;
-
-  @ApiProperty({ description: 'Отчество', example: 'Александровна' })
-  public patronymic: string;
-
   @ApiProperty({ description: 'Пароль', example: 'StrongPassword' })
   public password: string;
 

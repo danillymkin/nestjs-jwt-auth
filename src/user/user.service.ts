@@ -24,9 +24,6 @@ export class UserServiceImpl implements UserService {
       data: {
         email: registerUserDto.email,
         password: hashedPassword,
-        firstName: registerUserDto.firstName,
-        lastName: registerUserDto.lastName,
-        patronymic: registerUserDto.patronymic,
         roles: {
           connect: {
             name: RoleName.USER,
