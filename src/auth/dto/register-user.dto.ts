@@ -11,16 +11,4 @@ export class RegisterUserDto {
   @IsString({ message: 'Пароль должен быть строкой' })
   @MinLength(6, { message: 'Пароль должен быть длиннее 6 символов' })
   readonly password: string;
-
-  @ApiProperty({ description: 'Имя', example: 'Алиса' })
-  @IsString({ message: 'Имя должно быть строкой' })
-  readonly firstName: string;
-
-  @ApiProperty({ description: 'Фамилия', example: 'Ивлиева' })
-  @IsString({ message: 'Фамилия должна быть строкой' })
-  readonly lastName: string;
-
-  @ApiProperty({ description: 'Отчество', example: 'Александровна' })
-  @IsString({ message: 'Отчество должно быть строкой' })
-  readonly patronymic: string;
 }

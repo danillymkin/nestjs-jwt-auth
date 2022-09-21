@@ -5,11 +5,11 @@ import { UserModel } from '../../user/models/user.model';
 
 export class LoginResponseDto implements LoginResponse {
   @ApiProperty({ description: 'Пользователь', type: UserModel })
-  user: UserResponse;
+  readonly user: UserResponse;
 
   @ApiProperty({
     description: 'Токен доступа',
     example: 'eyJhbGciOiJIUzI1Ni.eyJpZCI6MW1haWwiO.cA2XWju-fAoENALb',
   })
-  accessToken: string;
+  readonly accessToken: string;
 }
